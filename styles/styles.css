@@ -1,12 +1,61 @@
-
-/* Css selectors */
-.container1 {
-  background-color: antiquewhite;
-  border: solid;
+/* Color Variables */
+:root {
+  --primary-color: #FAF7F0;
+  --secondary-color: #D8D2C2;
+  --color-accent-1: #B17457;
+  --color-accent-2: #4A4947;
 }
 
-.container2 {
-  background-color: bisque;
-  border: solid;
-  margin-top: 1rem;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
 }
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "left-sidebar main right-sidebar"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  gap: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: var(--color-accent-1);
+  color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.left-sidebar {
+  grid-area: left-sidebar;
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+main {
+  grid-area: main;
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: var(--color-accent-2);
+}
+
+.right-sidebar {
+  grid-area: right-sidebar;
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--color-accent-2);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 10px;
+}
+
