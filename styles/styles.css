@@ -3,7 +3,7 @@
   --primary-color: #FAF7F0;
   --secondary-color: #D8D2C2;
   --color-accent-1: #B17457;
-  --color-accent-2: #4A4947;
+  --color-accent-2: #505C45;
 }
 
 body {
@@ -28,8 +28,33 @@ header {
   grid-area: header;
   background-color: var(--color-accent-1);
   color: var(--primary-color);
-  padding: 40px;
+  padding: 25px;
   text-align: center;
+}
+
+header > img {
+  border-radius: 50%;
+  width: 150px;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 500;
+  font-size: 50px;
+  margin: 0;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+nav a:hover {
+  color: black;
 }
 
 .left-sidebar {
