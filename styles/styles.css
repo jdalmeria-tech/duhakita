@@ -89,14 +89,15 @@ footer {
   padding: 20px;
 }
 
-/* Home page selector */
-.right-sidebar figure {
-  margin-top: 2rem;
+/* Home page selector and About page*/
+.right-sidebar figure, .about-right figure {
+  margin: 0;
+  padding: 2rem;
   text-align: center;
 }
 
-.right-sidebar .homephoto {
-  max-width: 50%;
+.right-sidebar .homephoto, .about-right .aboutphoto1 {
+  max-width: 250px;
   height: auto;
   border-radius: 10px;
 }
